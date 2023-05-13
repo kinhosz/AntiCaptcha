@@ -6,7 +6,7 @@ def get(option):
     if option not in options:
         raise Exception("Cannot find this dataset option: {}".format(option))
     
-    path = '...EMNIST/' + option + '/emnist-' + option + '-'
+    path = './EMNIST/' + option + '/emnist-' + option + '-'
 
     dataset_map = map.get(path)
     dataset_test = test.get(path)
